@@ -141,6 +141,7 @@ You will most likely be prompted for your password to add the Vaultron CA certif
 
 ```shell
 $ git clone https://github.com/ram-parameswaran/ram_vaultron.git && \
+  mv ram_vaultron vaultron && \
   cd vaultron && \
   ./form && \
   . ./ion_darts && \
@@ -163,6 +164,7 @@ Vaultron uses the latest Consul and Vault OSS versions by default, so make sure 
 After installing prerequisites, it takes just 3 steps to form Vaultron.
 
 1. `git clone https://github.com/ram-parameswaran/ram_vaultron.git`
+2. `mv ram_vaultron vaultron`
 2. `cd vaultron`
 3. `./form`
 
