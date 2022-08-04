@@ -239,7 +239,7 @@ unseal_vault_raft() {
 
 msg greeting "Blazing Sword!"
 
-sleep 30s
+sleep 30
 
 check_flavor
 
