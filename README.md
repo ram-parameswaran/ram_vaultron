@@ -1,6 +1,6 @@
 # Vaultron
 
-![Diagram of a Vaultron cluster with Consul storage flavor](https://github.com/brianshumate/vaultron/blob/main/share/vaultron-consul-flavor.png?raw=true)
+![Diagram of a Vaultron cluster with Consul storage flavor](https://github.com/ram-parameswaran/vaultron/blob/main/share/vaultron-consul-flavor.png?raw=true)
 
 _Diagram of a Vaultron cluster with Consul storage flavor_
 
@@ -79,7 +79,7 @@ _Diagram of a Vaultron cluster with Consul storage flavor_
   - [Who?](#who)
   - [Special Thanks](#special-thanks)
 
-![Diagram of a Vaultron cluster with integrated storage flavor](https://github.com/brianshumate/vaultron/blob/main/share/vaultron-raft-flavor.png?raw=true)
+![Diagram of a Vaultron cluster with integrated storage flavor](https://github.com/ram-parameswaran/vaultron/blob/main/share/vaultron-raft-flavor.png?raw=true)
 
 _Diagram of a Vaultron cluster with integrated storage (Raft) flavor_
 
@@ -140,7 +140,7 @@ Once you have the prerequisites installed, you can use the following example to 
 You will most likely be prompted for your password to add the Vaultron CA certificate from `etc/tls/ca.pem` to the System Keychain. This will prevent TLS errors about an untrusted CA certificate when using the Consul and Vault web UIs.
 
 ```shell
-$ git clone https://github.com/brianshumate/vaultron.git && \
+$ git clone https://github.com/ram-parameswaran/vaultron.git && \
   cd vaultron && \
   ./form && \
   . ./ion_darts && \
@@ -162,7 +162,7 @@ Vaultron uses the latest Consul and Vault OSS versions by default, so make sure 
 
 After installing prerequisites, it takes just 3 steps to form Vaultron.
 
-1. `git clone https://github.com/brianshumate/vaultron.git`
+1. `git clone https://github.com/ram-parameswaran/vaultron.git`
 2. `cd vaultron`
 3. `./form`
 
@@ -876,7 +876,7 @@ The value used for the shared ACL Master Token is:
 
 #### TLS by Default
 
-Vaultron uses self-signed certificates for full mutual TLS communication between Vault servers and Consul agents. The certificates and keys were generated from Vault PKI Secrets Backends as described in [examples/tls/README.md](https://github.com/brianshumate/vaultron/blob/master/examples/tls/README.md).
+Vaultron uses self-signed certificates for full mutual TLS communication between Vault servers and Consul agents. The certificates and keys were generated from Vault PKI Secrets Backends as described in [examples/tls/README.md](https://github.com/ram-parameswaran/vaultron/blob/master/examples/tls/README.md).
 
 With this in mind, you need to ensure that the certificate authority is recognized by Vault and Consul; you can do this in a number of ways:
 
@@ -894,7 +894,7 @@ Here are some additional resources related to configuring ACLs and TLS:
 
 ##### Vault PKI Secrets Engine Based TLS Configuration
 
-All of the TLS certificates and keys used by Vaultron were created by Vaultron itself as documented in [examples/tls/README.md](https://github.com/brianshumate/vaultron/blob/master/examples/tls/README.md).
+All of the TLS certificates and keys used by Vaultron were created by Vaultron itself as documented in [examples/tls/README.md](https://github.com/ram-parameswaran/vaultron/blob/master/examples/tls/README.md).
 
 There are also some additional certificate/key pairs already generated for use in configuring TLS for other containers often used with Vaultron, and specifically including the following:
 
@@ -905,7 +905,7 @@ There are also some additional certificate/key pairs already generated for use i
 - PostgreSQL
 - Prometheus
 
-You can even import the PKI Secrets Engines for the Root and Intermediate CAs and generate more roles, certificates, etc. as described in [examples/tls/README-IMPORT.md](https://github.com/brianshumate/vaultron/blob/master/examples/tls/README-IMPORT.md).
+You can even import the PKI Secrets Engines for the Root and Intermediate CAs and generate more roles, certificates, etc. as described in [examples/tls/README-IMPORT.md](https://github.com/ram-parameswaran/vaultron/blob/master/examples/tls/README-IMPORT.md).
 
 There's also an `examples/tls/eybeams_tls` script that will do this import for you.
 
@@ -995,7 +995,7 @@ You can then access Grafana at: `https://127.0.0.1:3000/` After Vaultron is form
 
 Once signed in, you can access the example **Vault** dashboard; you'll need to initialize, unseal, and do some work with Vault before metrics begin to appear. Adjusting the time filtering in the Grafana UI to a more recent span can also help.
 
-See the [Visualizing Vault Telemetry](https://github.com/brianshumate/vaultron/blob/master/examples/telemetry/README.md) documentation for more details on this setup.
+See the [Visualizing Vault Telemetry](https://github.com/ram-parameswaran/vaultron/blob/master/examples/telemetry/README.md) documentation for more details on this setup.
 
 ### A Note About Custom Binaries
 
